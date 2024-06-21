@@ -1,0 +1,139 @@
+/* Reset de estilos básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para a página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #333; /* Cor do texto principal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
+    max-height: 900px;
+}
+
+h1, h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Estilização dos botões */
+button {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+
+button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+#playAgain {
+    padding: 10px;
+    margin: auto;
+    gap: 10px; /* Ajuste para espaço entre os botões */
+}
+
+.button:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+/* Estilos para garantir que label e input/textarea fiquem em linhas separadas */
+label, input[type="number"], input[type="text"], input[type="email"], select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    color: #ff90e8;
+    background-color: #212121;
+    outline-color: #ff90e8;
+    box-shadow: -3px -3px 15px #ff90e8;
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+/* Estilização para links */
+a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Cor dos links ao passar o mouse */
+}
+
+/* Estilos para a classe .input */
+.input {
+    background-color: #212121;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.input:focus {
+    color: #ff90e8;
+    background-color: #212121;
+    outline-color: #ff90e8;
+    box-shadow: -3px -3px 15px #ff90e8;
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+/* Adicionando margem entre os botões */
+.btn {
+    margin: 20px 0; /* Ajusta a margem entre os botões */
+}
